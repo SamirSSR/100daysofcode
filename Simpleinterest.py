@@ -1,0 +1,5 @@
+p = int(input("Enter Principal: "))
+t = int(input("Enter Time: "))
+r = int(input("Enter Rate: "))
+si = p*(1+r*t)
+print("the simple interest is " + str(si))
