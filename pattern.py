@@ -211,8 +211,34 @@ def butterfly(h):
             print("*"*(count)+" "*2*(h-count)+"*"*(count))
             count = count - 1
 
+def hollow_box(h):
+    count = 1
+    while(count<=h):
+        if(count == 1 or count == h):
+            print("*"*(h-1))
+        else:
+            print("*"+" "*2+"*")
+        count = count+1
+
+def rightangled_numbers(h):
+    count = 1
+    last_num = 0
+    while(count<=h):
+        tem = 1
+        while(tem<=count):
+            last_num = last_num+1
+            print(str(last_num), end=" ")
+            tem = tem + 1
+        print("")
+        count = count + 1
+        
+
+        
+
 if __name__ == "__main__":
-    butterfly(5)
+    rightangled_numbers(5)
+    # hollow_box(5)
+    # butterfly(5)
     # hollw_diamond_withinrectangle(5)
     # diamondwithnumbers(5)
     # pascaltriangle(5)
