@@ -232,11 +232,28 @@ def rightangled_numbers(h):
         print("")
         count = count + 1
         
+def rightangled_binary(h):
+    count = 1
+    chrs = ["1", "0"]
+    index = 0
+    while(count<=h):
+        tem = 1
+        while(tem<=count):
+            if(index==0):
+                print(chrs[index], end=" ")
+                index= index + 1
+            else:
+                print(chrs[index], end=" ")
+                index = index - 1
+            tem = tem + 1
+        print("")
+        count = count + 1
 
-        
+
 
 if __name__ == "__main__":
-    rightangled_numbers(5)
+    # rightangled_binary(5)
+    # rightangled_numbers(5)
     # hollow_box(5)
     # butterfly(5)
     # hollw_diamond_withinrectangle(5)
